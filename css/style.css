@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
  }
 
- #topo {
-    height: 100px;
+#topo {
+    height: 180px;
     background:#fff;
     color: #fff;
     display: flex;
@@ -13,14 +16,13 @@
 }
 
 #topo nav ul {
-    width: 107%;
+    width: 100%;
     margin: 10px auto;
 }
 
 #topo nav ul li {
-    display:inline-flex;
+    display:inline-block;
     margin: 10px;
-    width: 8.5vw;
     justify-content: center;
 }
 
@@ -28,8 +30,9 @@
     text-decoration: none;
     color: #fff;
     background-color: #0077C8;
-    font-size: 14px;
-    padding: 8px 25px;
+    font-size: 17px;
+    margin-top: 50px;
+    padding: 15px 40px;
     display: inline-block;
     font-weight: bold;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -41,7 +44,7 @@
     color: #fff;
     border-radius: 12px;
     font-weight: bold;
-    transform: scale(1.5) translateX(-10px);
+    transform: scale(1.2) translateX(-5px);
 }
 
 .active{
@@ -49,20 +52,14 @@
     background-color: #fff;
     font-weight: bold;
     border-radius: 12px;
+    border: 2px solid #007bff;
 }
 
 .espaco__vazio {
-    height: 240px;
+    height: 200px;
     background: linear-gradient(to right, #009CA6, #0077C8);
     margin-bottom: 20px;
 }
-
-/*#topo h1{
-    text-align: center;
-    padding-top: 10px;
-    font-size: 48px; 
-    color: #fff; 
-}*/
 
 .container{
     width: 100vw;
