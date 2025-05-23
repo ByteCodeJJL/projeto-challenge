@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acesse</title>
+        <link rel="shortcut icon" href="./img/geral/logoHCprofile.jpg">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+<body class="paginas__navegacao">
+    <div class="container">
+        <header id="topo">
+            <div>
+                <img class="logoHC" src="./img/geral/logoHCprofile.jpg" alt="Logo Hospital das Clínicas">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="container__navlink" href="../index.html">Home</a></li>
+                    <li><a class="container__navlink" href="./integrantes.html">Integrantes</a></li>
+                    <li><a class="container__navlink" href="./contato.html">Contato</a></li>
+                    <li><a class="container__navlink" href="./faq.html">FAQ</a></li>
+                    <li><a class="container__navlink" href="./teleconsulta.html">Teleconsulta</a></li>
+                    <li><a class="container__navlink" href="./calendario.html">Calendário</a></li>
+                    <li><a class="container__navlink" href="./sobre.html">Sobre</a></li>
+                    <li><a class="container__navlink active" href="./acesso.html">Acesse</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img class="icone__usuario" src="./img/geral/user-icon.webp" alt="Ícone perfil do usuário">
+            </div>
+        </header>
+    </div>
+    
+    <main>
+        <div class="acesso">
+            <h2>Cadastro</h2>
+            <form id="formCadastro">
+                <label for="cadastroUsuario" class="label__acesso">Usuário:</label>
+                <input type="text" id="cadastroUsuario" required>
+                <label for="cadastroSenha" class="label__acesso">Senha:</label>
+                <input type="password" id="cadastroSenha" required>
+                <button type="submit" class="acesso__botao">Cadastrar</button>
+            </form>
+
+            <h2>Login</h2>
+            <form id="formLogin">
+                <label for="loginUsuario" class="label__acesso">Usuário:</label>
+                <input type="text" id="loginUsuario" required>
+                <label for="loginSenha" class="label__acesso">Senha:</label>
+                <input type="password" id="loginSenha" required>
+                <button type="submit" class="acesso__botao">Entrar</button>
+            </form>
+
+            <div id="mensagem"></div>
+        </div>
+    </main>
+
+    
+</body>
+</html>
+
