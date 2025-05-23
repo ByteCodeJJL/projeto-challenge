@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ByteCode HC</title>
-        <link rel="shortcut icon" href="./assets/img/1ccad049b0133a657a10cc12d9f5083a28f3eee0.png">
+        <link rel="shortcut icon" href="./assets/img/geral/logoHCprofile.jpg">
         <link rel="stylesheet" href="./css/style.css">
         <script src="./js/script.js"></script>
     </head>
@@ -13,7 +13,7 @@
     <div class="container">
         <header id="topo">
             <div>
-                <img class="logoHC" src="./assets/img/logoHC.png" alt="Logo Hospital das Clínicas">
+                <img class="logoHC" src="./assets/img/geral/logoHCprofile.jpg" alt="Logo Hospital das Clínicas">
             </div>
             <nav>
                 <ul>
@@ -22,52 +22,64 @@
                     <li><a class="container__navlink" href="./assets/contato.html">Contato</a></li>
                     <li><a class="container__navlink" href="./assets/faq.html">FAQ</a></li>
                     <li><a class="container__navlink" href="./assets/teleconsulta.html">Teleconsulta</a></li>
-                    <li><a class="container__navlink" href="./assets/consultarmedico.html">Equipe</a></li>
                     <li><a class="container__navlink" href="./assets/calendario.html">Calendário</a></li>
-                    <li><a class="container__navlink" href="./assets/sobre.html">Sobre nós</a></li>
+                    <li><a class="container__navlink" href="./assets/sobre.html">Sobre</a></li>
+                    <li><a class="container__navlink" href="./assets/acesso.html">Acesse</a></li>
                 </ul>
             </nav>
             <div>
-                <img src="" alt="Ícone perfil do usuário">
+                <img class="icone__usuario" src="./assets/img/geral/user-icon.webp" alt="Ícone perfil do usuário">
             </div>
         </header>
 
         <div class="espaco__vazio"></div>
         <main>
             <section>
-                <h2>Saúde</h2>
+                <div class="saude__index">
+                    <div class="conteudo__saude">
+                        <h2>SAÚDE</h2>
+                            <div class="botoes">
+                                <div class="botao"><a href="./assets/teleconsulta.html">🧑⚕️💻 Teleconsulta</a></div>
+                                <div class="botao"><a href="./assets/calendario.html">📅 Calendário</a></div>
+                                <div class="botao"><a href="./assets/contato.html">📍 Locais De Atendimento</a></div>
+                                <div class="botao"><a href="./assets/sobre.html">👥 Sobre nós</a></div>
+                            </div>
+                    </div>
 
-                <div>
-                    <p>🏥 Ache um médico</p>
-                    <p>📅 Calendário</p>
-                    <p>📍 Locais de atendimento</p>
-                    <p>📄 Laudos</p>
-                    <img src="./assets/img/vacina.png" alt="Aplicação de vacina em uma paciente">
+                    <div class="imagem__vacinacao">
+                        <img src="./assets/img/index/vacinacao.png" alt="Vacinação">
+                    </div>
                 </div>
-
             </section>
 
             <section>
-                <h2>Notícias</h2>
-                <div>
-                    <img src="./assets/img/1.png" alt="Arte feita em prédio que ilustra a pediatria">
-                    <p>Arte que transforma</p>
+                <h2 class="noticias__h2">NOTÍCIAS</h2>
+                <button id="toggleNoticias">Mostrar/Esconder Notícias</button>
+                <div class="noticias__container">
+                    <div class="noticias__index">
+                        <img src="./assets/img/index/pediatria.png" alt="Arte em prédio que ilustra a pediatria">
+                        <p>Arte que transforma</p>
+                    </div>
+
+                    <div class="noticias__index">
+                        <img src="./assets/img/index/grupo.png" alt="Associação dos Voluntários do Hospital das Clínicas">
+                        <p>AVOHC completa 68 anos de atuação</p>
+                    </div>
+
+                    <div class="noticias__index">
+                        <img src="./assets/img/index/biolixo.png" alt="Descarte de bio-lixo">
+                        <p>Projeto Bio-lixo Seguro</p>
+                    </div>
+
+                    <div class="noticias__index">
+                        <img src="./assets/img/index/borboleta.png" alt="Borboleta na mão de uma mulher">
+                        <p>Combate à Violência Doméstica</p>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="./assets/img/2.png" alt="Associação dos Voluntários do Hospital das Clínicas">
-                    <p>AVOHC completa 68 anos de atuação</p>
-                </div>
+                
 
-                <div>
-                    <img src="./assets/img/3.png" alt="Bio-lixo sendo descartado da forma correta">
-                    <p>Projeto Bio-lixo Seguro</p>
-                </div>
-
-                <div>
-                    <img src="./assets/img/4.png" alt="Borboleta na mão de uma mulher branca">
-                    <p>Combate à Violência Doméstica</p>
-                </div>
+                <div class="linha__recuo"></div>
             </section>
         </main>
         <footer>
