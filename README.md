@@ -1,4 +1,4 @@
-# Bem vindo projeto Front-End ByteCode do Challenge FIAP 2025!
+# Bem vindo ao projeto Front-End ByteCode do Challenge FIAP 2025!
 
 ## 🎯 Objetivo do projeto:
 O objetivo do projeto se baseia na criação de um site mais intuitivo e de maior entendimento de usuários com dificuldades. De forma que seja mais fácil e acessível para a experiência do cliente.
@@ -6,7 +6,7 @@ O objetivo do projeto se baseia na criação de um site mais intuitivo e de maio
 ---
 
 ## 📌 Estruturas de pastas e arquivos
-A estrutura de pastas e arquivos estão organizadas de acordo com seus conteúdos, sendo apresentados em assets com a pasta de imagens e arquivos HTML das páginas de navegação criadas.
+A estrutura de pastas e arquivos estão organizadas de acordo com seus conteúdos, sendo apresentados em assets com a pasta de imagens e arquivos HTML das páginas de navegação criadas. Além disso, pasta e arquivo CSS e pasta e arquivo JavaScript separadamente.
 
 ---
 
