@@ -1,3 +1,4 @@
+/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -7,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
  }
 
-#topo {
+ #topo {
     height: 180px;
     background:#fff;
     color: #fff;
@@ -30,9 +31,9 @@
     text-decoration: none;
     color: #fff;
     background-color: #0077C8;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 50px;
-    padding: 15px 40px;
+    padding: 10px 30px;
     display: inline-block;
     font-weight: bold;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -79,6 +80,7 @@ footer{
 footer p {
     padding-top: 10px;
     margin-left: 80px;
+    font-size: 16px;
 }
 
 .paginas__navegacao {
@@ -103,12 +105,13 @@ footer p {
     padding: 20px;
     width: 70%;
     margin-left: 10px;
+    font-size: 18px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid #009688;
 }
 
 .titulo__pagina {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 15px;
     margin-left: 30px;
@@ -126,13 +129,20 @@ footer p {
 
 .conteudo__teleconsulta__sobre {
     margin: 30px 10px;
-    color: #000;
+    color: #fff;
     width: 90%;
-    background-color: #fff;
     padding: 20px;
     border-radius: 25px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid #009688;
+}
+
+.conteudo__teleconsulta__sobre h3 {
+    font-size: 19px;
+}
+
+.conteudo__teleconsulta__sobre p {
+    font-size: 17px;
 }
 
 .icone__usuario {
@@ -145,8 +155,9 @@ footer p {
     width: 180px;
     height: auto;
 }
+
 .imagens__equipe {
-    width: 450px;
+    width: 400px;
     height: auto;
     border-radius: 15px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
@@ -160,14 +171,13 @@ footer p {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    border-radius: 12px;
     gap: 15px;
 }
 
 .paragrafo__equipe {
     margin-top: 5px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -185,32 +195,30 @@ footer p {
 
 .contato {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: auto 300px;
     align-items: center;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid #009688;
     margin-bottom: 30px;
+    justify-content: center;
+    height: 240px;
 }
 
 .paragrafo__contato {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
 }
 
 .conteudo__contato {
-    margin: 30px 200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding: 30px;
+    height: 120px;
     justify-content: center;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 25px;
     font-size: 18px;
-    padding: 20px;
-    width: 25%;
-    height: 130px;
+    
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid #009688;
 }
@@ -219,7 +227,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     width: 1700px;
-    gap: 15px;
+    gap: 10px;
     margin: auto;
     justify-content: center;
 }
@@ -227,10 +235,11 @@ footer p {
 .unidades img {
     width: calc(33.333% - 10px);
     height: auto;
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid #009688;
 }
+
 .noticias__container {
   display: flex;
   justify-content: center;
@@ -244,18 +253,22 @@ footer p {
   text-align: center;
   font-weight: bold;
   margin-bottom: 100px;
-  border-radius: 20px;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
-  border: 2px solid #009688;
+}
+
+.noticias__index p {
+    font-size: 16px;
 }
 
 .noticias__index img {
-    border-radius: 20px;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid #009688;
 }
 
 .saude__index {
   display: flex;
-
   margin-left: 400px;
   align-items: center;
   gap: 50px;
@@ -263,7 +276,7 @@ footer p {
 }
 
 .conteudo__saude h2 {
-  font-size: 48px;
+  font-size: 40px;
   color: #0a0a0a;
   margin-bottom: 30px;
 }
@@ -271,15 +284,15 @@ footer p {
 .botoes {
   display: grid;
   grid-template-columns: repeat(2, 200px);
-  gap: 20px;
+  gap: 10px;
 }
 
 .botao {
   border: 2px solid #007bff;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   color: #0a0a0a;
   display: flex;
   align-items: center;
@@ -301,7 +314,7 @@ footer p {
 
 .imagem__vacinacao img {
   margin-top: 20px;
-  width: 800px;
+  width: 600px;
   height: auto;
   border-radius: 16px;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
@@ -309,8 +322,8 @@ footer p {
 }
 
 .noticias__h2 {
-    margin-top: 100px;
-  font-size: 44px;
+  margin-top: 100px;
+  font-size: 40px;
   color: #0a0a0a;
   margin-bottom: 30px;
   margin-left: 400px;
@@ -328,12 +341,12 @@ footer p {
     justify-content: center;
     gap: 16px;
     border: 2px solid #22D4FD;
-    width: 378px;
+    width: 350px;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 15px 0;
     text-decoration: none;
     color: #F6F6F6;
 }
@@ -345,8 +358,8 @@ footer p {
     margin-left: 400px;
     color: #fff;
     background-color: #007bff;
-    padding: 10px;
-    font-size: 16px;
+    padding: 9px;
+    font-size: 14px;
     border-radius: 15px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid #009688;
@@ -404,4 +417,632 @@ footer p {
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
+}
+
+
+/*Extra Small devices*/
+@media(max-width: 600px) {
+    .logoHC, .icone__usuario {
+        width: 40%;
+    }
+
+    .botoes {
+        gap: 8px;
+    }
+    
+    .botao {
+        padding: 8%;
+    }
+
+    .botao a {
+        font-size: 18px;
+    }
+
+    .imagem__vacinacao img {
+        width: 550px;
+        height: auto;
+    }
+
+    .imagens__equipe {
+        width: 120px;
+        height: auto;
+    }
+
+    .paragrafo__equipe {
+        font-size: 13px;
+    }
+
+    .links__equipe {
+        width: 120px;
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    .links__equipe img {
+        width: 15px;
+        height: auto;
+    }
+
+    .calendario img {
+        display: flex;
+        width: 540px;
+        height: auto;
+    }
+
+    .acesso {
+        width: 400px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .unidades {
+        width: 600px;
+    }
+
+    .noticias__index img {
+        width: 100%;
+    }
+
+    .noticias__index p {
+        font-size: 15px; 
+    }
+
+    #topo {
+        height: 156px;
+        justify-content: space-between;
+    }
+
+    #topo nav ul {
+        display: flex;
+    }
+
+    .contato {
+        gap: 20px;
+        height: 180px;
+        margin: auto 10px;
+        margin-bottom: 20px;
+    }
+
+    .paragrafo__contato {
+        font-size: 13px;
+    }
+
+    .conteudo__contato {
+        padding: 20px;
+        height: 110px;
+    }
+
+    .conteudo__contato h3 {
+        font-size: 19px;
+    }
+
+    .perguntas__faq {
+        padding: 16px;
+        font-size: 16px;
+        width: 96%;
+    }
+
+    .conteudo__saude h2, .noticias__h2 {
+        font-size: 30px;
+    }
+
+    .container__navlink {
+        font-size: 12px;
+        padding: 8px 25px;
+        display: inline-block;
+    }
+
+    .saude__index {
+        margin:auto;
+        justify-content: center;
+    }
+
+    .noticias__h2 {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #toggleNoticias {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center; 
+    }
+}
+
+/*Small devices*/
+@media(min-width: 600px) {
+    .logoHC, .icone__usuario {
+        width: 40%;
+    }
+
+    .botoes {
+        gap: 8px;
+    }
+    
+    .botao {
+        padding: 8%;
+    }
+
+    .botao a {
+        font-size: 18px;
+    }
+
+    .imagem__vacinacao img {
+        width: 550px;
+        height: auto;
+    }
+
+    .imagens__equipe {
+        width: 120px;
+        height: auto;
+    }
+
+    .paragrafo__equipe {
+        font-size: 13px;
+    }
+
+    .links__equipe {
+        width: 150px;
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .links__equipe img {
+        width: 20px;
+        height: auto;
+    }
+
+    .calendario img {
+        width: 550px;
+        height: auto;
+    }
+
+    .acesso {
+        width: 400px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .unidades {
+        width: 600px;
+    }
+
+    .noticias__index img {
+        width: 100%;
+    }
+
+    .noticias__index p {
+        font-size: 15px; 
+    }
+
+    #topo {
+        height: 156px;
+        justify-content: space-between;
+    }
+
+    #topo nav ul {
+        display: flex;
+    }
+
+    .contato {
+        gap: 20px;
+        height: 180px;
+        margin: auto 10px;
+        margin-bottom: 20px;
+    }
+
+    .paragrafo__contato {
+        font-size: 13px;
+    }
+
+    .conteudo__contato {
+        padding: 20px;
+        height: 110px;
+    }
+
+    .conteudo__contato h3 {
+        font-size: 19px;
+    }
+
+    .perguntas__faq {
+        padding: 16px;
+        font-size: 16px;
+        width: 96%;
+    }
+
+    .conteudo__saude h2, .noticias__h2 {
+        font-size: 30px;
+    }
+
+    .container__navlink {
+        font-size: 12px;
+        padding: 8px 25px;
+        display: inline-block;
+    }
+
+    .saude__index {
+        margin:auto;
+        justify-content: center;
+    }
+
+    .noticias__h2 {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #toggleNoticias {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center; 
+    }
+}
+
+/*Medium devices*/
+@media(min-width: 768px) {
+    .logoHC, .icone__usuario {
+        width: 40%;
+    }
+
+    .botoes {
+        gap: 8px;
+    }
+    
+    .botao {
+        padding: 8%;
+    }
+
+    .botao a {
+        font-size: 18px;
+    }
+
+    .imagem__vacinacao img {
+        width: 550px;
+        height: auto;
+    }
+
+    .imagens__equipe {
+        width: 190px;
+        height: auto;
+    }
+
+    .paragrafo__equipe {
+        font-size: 13px;
+    }
+
+    .links__equipe {
+        width: 150px;
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .links__equipe img {
+        width: 20px;
+        height: auto;
+    }
+
+    .calendario img {
+        width: 660px;
+        height: auto;
+    }
+
+    .acesso {
+        width: 400px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .unidades {
+        width: 750px;
+    }
+
+    .noticias__index img {
+        width: 100%;
+    }
+
+    .noticias__index p {
+        font-size: 15px; 
+    }
+
+    #topo {
+        height: 156px;
+        justify-content: space-between;
+    }
+
+    #topo nav ul {
+        display: flex;
+    }
+
+    .contato {
+        gap: 20px;
+        height: 180px;
+        margin: auto 10px;
+        margin-bottom: 20px;
+    }
+
+    .paragrafo__contato {
+        font-size: 14px;
+    }
+
+    .conteudo__contato {
+        padding: 20px;
+        height: 100px;
+    }
+
+    .conteudo__contato h3 {
+        font-size: 19px;
+    }
+
+    .perguntas__faq {
+        padding: 16px;
+        font-size: 16px;
+        width: 96%;
+    }
+
+    .conteudo__saude h2, .noticias__h2 {
+        font-size: 30px;
+    }
+
+    .container__navlink {
+        font-size: 12px;
+        padding: 8px 25px;
+        display: inline-block;
+    }
+
+    .saude__index {
+        margin:auto;
+        justify-content: center;
+    }
+
+    .noticias__h2 {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #toggleNoticias {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center; 
+    }
+}
+
+/*Large devices*/
+@media(min-width: 992px) {
+    .logoHC, .icone__usuario {
+        width: 40%;
+    }
+
+    .botoes {
+        gap: 8px;
+    }
+    
+    .botao {
+        padding: 8px;
+    }
+
+    .imagem__vacinacao img {
+        width: 500px;
+        height: auto;
+    }
+
+    .imagens__equipe {
+        width: 260px;
+        height: auto;
+    }
+
+    .paragrafo__equipe {
+        font-size: 15px;
+    }
+
+    .links__equipe {
+        width: 200px;
+        font-size: 18px;
+        padding: 7px 0;
+    }
+
+    .links__equipe img {
+        width: 25px;
+        height: auto;
+    }
+
+    .calendario img {
+        width: 860px;
+        height: auto;
+    }
+
+    .acesso {
+        width: 400px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .unidades {
+        width: 950px;
+    }
+
+    .noticias__index img {
+        width: 100%;
+    }
+
+    .noticias__index p {
+        font-size: 15px; 
+    }
+
+    #topo {
+        height: 156px;
+        justify-content: space-between;
+    }
+
+    #topo nav ul {
+        display: flex;
+    }
+
+    .contato {
+        gap: 20px;
+        height: 180px;
+        margin: auto 40px;
+        margin-bottom: 20px;
+    }
+
+    .paragrafo__contato {
+        font-size: 15px;
+    }
+
+    .conteudo__contato {
+        padding: 20px;
+        height: 100px;
+    }
+
+    .conteudo__contato h3 {
+        font-size: 19px;
+    }
+
+    .perguntas__faq {
+        padding: 16px;
+        font-size: 16px;
+        width: 96%;
+    }
+
+    .conteudo__saude h2, .noticias__h2 {
+        font-size: 35px;
+    }
+
+    .container__navlink {
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+
+    .saude__index {
+        margin:auto;
+        justify-content: center;
+    }
+
+    .noticias__h2 {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    #toggleNoticias {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center; 
+    }
+    
+}
+
+/*Extra-Large devices*/
+@media(min-width: 1300px) {
+    .logoHC {
+        width: 180px;
+    }
+
+    .icone__usuario {
+        width: 100px;
+    }
+
+    .botoes {
+        gap: 10px;
+    }
+    
+    .botao {
+        padding: 15px;
+    }
+
+    .imagem__vacinacao img {
+        width: 600px;
+    }
+
+    .imagens__equipe {
+        width: 400px;
+        height: auto;
+    }
+
+    .paragrafo__equipe {
+        font-size: 18px;
+    }
+
+    .links__equipe {
+        width: 350px;
+        font-size: 22px;
+        padding: 15px 0;
+    }
+
+    .calendario img {
+        width: 1000px;
+    }
+
+    .acesso {
+        width: 400px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .unidades {
+        width: 1700px;
+        gap: 15px;
+    }
+
+    .noticias__index p {
+        font-size: 18px; 
+    }
+
+    #topo {
+        height: 180px;
+    }
+
+    .contato {
+        gap: 40px;
+        height: 240px;
+        margin: auto 300px;
+        margin-bottom: 20px;
+    }
+
+    .paragrafo__contato {
+        font-size: 15px;
+    }
+
+    .conteudo__contato {
+        padding: 30px;
+        height: 120px;
+    }
+
+    .perguntas__faq {
+        padding: 20px;
+        font-size: 19px;
+        width: 70%;
+    }
+
+    .conteudo__saude h2, .noticias__h2 {
+        font-size: 40px;
+    }
+
+    .container__navlink {
+        font-size: 15px;
+        padding: 10px 30px;
+    } 
+
+    .saude__index {
+        margin:auto;
+        justify-content: center;
+    }
+
+    .noticias__h2 {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    #toggleNoticias {
+        margin:auto;
+        margin-left: 200px;
+        justify-content: center; 
+    }
 }
