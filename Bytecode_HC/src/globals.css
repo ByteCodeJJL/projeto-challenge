@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {scroll-behavior: smooth;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@layer base {
+  :root {
+    --cor-primaria-clara: #009CA6;
+    --cor-primaria: #0077C8;
+    --cor-primaria-escura: #007bff;
+    --cor-destaque: #009688;
+    --cor-texto-principal: #020B12;
+    --cor-texto-secundario: #0a0a0a;
+    --cor-link-borda: #22D4FD;
+    --cor-link-texto: #4b1515;
+    --cor-sucesso: #28a745;
+    --cor-sucesso-hover: #218838;
+    --cor-fundo-hover: #f0f8ff;
+
+    --font-family-sans: 'Roboto', sans-serif;
+
+    --raio-borda-nav: 12px;
+    --raio-borda-card: 15px;
+    --raio-borda-botao: 16px;
+    --raio-borda-caixa: 25px;
+    --raio-borda-form: 10px;
+    --raio-borda-input: 5px;
+
+    --sombra-card: 6px 6px 12px rgba(0, 0, 0, 0.15);
+    --sombra-form: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  html {
+    font-family: var(--font-family-sans);
+  }
+
+}
