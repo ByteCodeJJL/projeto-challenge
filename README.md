@@ -24,7 +24,7 @@ Este projeto foi totalmente reconstruído utilizando as tecnologias mais moderna
 Aqui estão algumas telas que demonstram a aparência e as principais funcionalidades do projeto.
 
 -   **Página Inicial**
-![Página inicial](image.png)
+![Página inicial](./Bytecode_HC/docs/images/image.png)
 
 -   **Dashboard de Teleconsulta**
 
