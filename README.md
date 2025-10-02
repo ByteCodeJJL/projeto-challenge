@@ -1,14 +1,5 @@
 # Bem vindo ao projeto Front-End ByteCode do Challenge FIAP 2025!
 
-## 🎯 Objetivo do projeto:
-O objetivo do projeto se baseia na criação de um site mais intuitivo e de maior entendimento de usuários com dificuldades. De forma que seja mais fácil e acessível para a experiência do cliente, modernizando a interface de interação com o sistema de saúde.
-
----
-
-## 📌 Estruturas de pastas e arquivos
-A estrutura de pastas e arquivos estão organizadas de acordo com seus conteúdos, sendo apresentados em assets com a pasta de imagens e arquivos HTML das páginas de navegação criadas. Além disso, pasta e arquivo CSS e pasta e arquivo JavaScript separadamente.
-
----
 
 ## 💻 Tecnologias utilizadas:
 Este projeto foi totalmente reconstruído utilizando as tecnologias mais modernas do ecossistema front-end para garantir performance, manutenibilidade e uma excelente experiência de desenvolvimento:
@@ -26,6 +17,25 @@ Este projeto foi totalmente reconstruído utilizando as tecnologias mais moderna
  - João Pedro Pereira Camilo
  - Lucas Matsubara Reis
  - João Victor Santana dos Santos
+
+---
+
+## 🖼️ Imagens e ícones relacionadas ao projeto
+Aqui estão algumas telas que demonstram a aparência e as principais funcionalidades do projeto.
+
+-   **Página Inicial**
+![Página inicial](image.png)
+
+-   **Dashboard de Teleconsulta**
+
+
+-   **Logo do Projeto**
+![Logo HC](./Bytecode_HC/public/logoHCprofile.jpg)
+
+---
+
+## 📌 Estruturas de pastas e arquivos
+Este projeto utiliza uma estrutura de pastas moderna e escalável, baseada no ecossistema Vite + React + TypeScript. O código-fonte (src) é organizado de forma modular, separando as responsabilidades em: components para elementos de UI reutilizáveis, routes para a configuração da navegação, e pastas específicas para cada página da aplicação.
 
 ---
 
