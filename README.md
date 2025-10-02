@@ -26,7 +26,8 @@ Aqui estão algumas telas que demonstram a aparência e as principais funcionali
 -   **Página Inicial**
 ![Página inicial](./Bytecode_HC/docs/images/image.png)
 
--   **Dashboard de Teleconsulta**
+-   **Área de acesso completa usando hookform**
+![Área de acesso do paciente](./Bytecode_HC/docs/images/image1.png)
 
 
 -   **Logo do Projeto**
