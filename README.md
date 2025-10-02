@@ -42,3 +42,8 @@ Este projeto utiliza uma estrutura de pastas moderna e escalável, baseada no ec
 
 ## 🌐 Endereço repositório do projeto no GITHUB
 https://github.com/ByteCodeJJL/projeto-challenge
+
+---
+
+## 🔗 Link do vídeo do YouTube
+https://youtu.be/aH8dq_f_wDQ?si=ZqnK1IXTyI1qhs3x
