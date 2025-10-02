@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Menu from "../Menu/Menu";
-import logo from '../../assets/img/geral/logoHCprofile.jpg'; 
+import logo from '../../../public/logoHCprofile.jpg'; 
 import userIcon from '../../assets/img/geral/user-icon.webp';
 
 export function Header() {
