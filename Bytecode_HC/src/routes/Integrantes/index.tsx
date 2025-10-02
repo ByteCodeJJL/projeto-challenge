@@ -8,9 +8,9 @@ import linkedin from "../../assets/img/integrantes/linkedin.png";
 
 
 const integrantes = [
-    { id: 1, nome: 'João Pedro Pereira Camilo', rm: '562005 | 1TDSPY/H)', foto: jp, ghLink: 'https://github.com/Jppcamilo', inLink: 'https://linkedin.com/in/joãopedrocamilo910b83298/' },
-    { id: 2, nome: 'Lucas Matsubara Reis', rm: '565020 | 1TDSPY/H)', foto: matsubara, ghLink: 'https://github.com/LucasMatsubara', inLink: 'www.linkedin.com/in/lucasmatsubara11' },
-    { id: 3, nome: 'João Victor Santana dos Santos', rm: '566003 | 1TDSPY/H)', foto: jv, ghLink: 'https://github.com/Jsantanadsx', inLink: 'https://linkedin.com/in/joão-victor-santana-2539a6365' }
+    { id: 1, nome: 'João Pedro Pereira Camilo', rm: '562005 | 1TDSPY)', foto: jp, ghLink: 'https://github.com/Jppcamilo', inLink: 'https://linkedin.com/in/joãopedrocamilo910b83298/' },
+    { id: 2, nome: 'Lucas Matsubara Reis', rm: '565020 | 1TDSPY)', foto: matsubara, ghLink: 'https://github.com/LucasMatsubara', inLink: 'https://linkedin.com/in/lucasmatsubara11' },
+    { id: 3, nome: 'João Victor Santana dos Santos', rm: '566003 | 1TDSPY)', foto: jv, ghLink: 'https://github.com/Jsantanadsx', inLink: 'https://linkedin.com/in/joão-victor-santana-2539a6365' }
 ];
 
 export default function Integrantes() {
