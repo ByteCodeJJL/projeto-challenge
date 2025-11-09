@@ -3,10 +3,8 @@ import { useNavigate, Link } from "react-router-dom";
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import { useAuth } from "../../hooks/useAuth";
 
-// [NOVO] Importe seus dados de usuários
 import { usuarios } from "../../data/usuarios";
 
-// ... (Seu IUser, IMessage, UserFormData, EyeIcon, EyeSlashIcon, etc. continuam iguais) ...
 
 interface IUser {
   nome: string;
@@ -38,34 +36,28 @@ const ExclamationIcon = () => (
 );
 const inputBaseClasses = "w-full p-3 pr-10 border rounded-md outline-none transition-colors duration-200";
 const getInputClasses = (hasError: boolean) =>
-  ${inputBaseClasses} ${hasError ? "border-red-500 focus:border-red-500 focus:ring-red-500" : "border-gray-300 focus:border-blue-500 focus:ring-blue-500"};
+  `${inputBaseClasses} ${hasError ? "border-red-500 focus:border-red-500 focus:ring-red-500" : "border-gray-300 focus:border-blue-500 focus:ring-blue-500"}`;
 
 function LoginForm({ onToggleView }: { onToggleView: () => void }) {
   const navigate = useNavigate();
-  // const location = useLocation(); // Não precisamos mais disso
   const [showPassword, setShowPassword] = useState(false);
   const [mensagem, setMensagem] = useState<IMessage>({ texto: "", tipo: "erro" });
   const { register, handleSubmit, formState: { errors } } = useForm<UserFormData>();
 
-  // [LÓGICA DO LOGIN CORRIGIDA]
   const onSubmit: SubmitHandler<UserFormData> = (data) => {
     const { email, senha } = data;
 
-    // 1. Procura o usuário no arquivo usuarios.ts
     const usuarioNoArquivo = usuarios.find((u) => u.email === email);
 
-    // 2. Procura o usuário no localStorage (que foi cadastrado)
     const senhaNoStorage = localStorage.getItem(email);
 
     let loginValido = false;
 
     if (usuarioNoArquivo) {
-      // Se encontrou no arquivo, valida a senha do arquivo
       if (usuarioNoArquivo.senha === senha) {
         loginValido = true;
       }
     } else if (senhaNoStorage) {
-      // Se encontrou no storage, valida a senha do storage
       if (senhaNoStorage === senha) {
         loginValido = true;
       }
@@ -81,7 +73,7 @@ function LoginForm({ onToggleView }: { onToggleView: () => void }) {
     localStorage.setItem("email", email);
     
     if (!usuarioNoArquivo) {
-      const nomeNoStorage = localStorage.getItem(nome_${email});
+      const nomeNoStorage = localStorage.getItem(`nome_${email}`);
       if (nomeNoStorage) {
         localStorage.setItem("nome", nomeNoStorage);
       }
@@ -91,10 +83,9 @@ function LoginForm({ onToggleView }: { onToggleView: () => void }) {
 
     setMensagem({ texto: "Login bem-sucedido! Redirecionando...", tipo: "sucesso" });
 
-    // Redireciona para a página de teleconsulta
     setTimeout(() => {
       navigate("/teleconsulta", { replace: true });
-      window.location.reload(); // Recarrega a página para atualizar o estado de autenticação
+      window.location.reload(); 
     }, 1000);
   };
 
@@ -103,9 +94,8 @@ function LoginForm({ onToggleView }: { onToggleView: () => void }) {
       <h1 className="text-3xl font-bold text-gray-900 mb-2">Login</h1>
       <p className="text-gray-600 mb-8">Bem-vindo de volta!</p>
 
-      {/* ... (o resto do seu formulário de login JSX é o mesmo) ... */}
       {mensagem.texto && (
-        <p className={mb-4 text-center font-semibold ${mensagem.tipo === "sucesso" ? "text-green-600" : "text-red-600"}}>
+        <p className={`mb-4 text-center font-semibold ${mensagem.tipo === "sucesso" ? "text-green-600" : "text-red-600"}`}>
           {mensagem.texto}
         </p>
       )}
@@ -150,18 +140,14 @@ function LoginForm({ onToggleView }: { onToggleView: () => void }) {
 
 function CadastroForm({ onToggleView }: { onToggleView: () => void }) {
   const navigate = useNavigate();
-  // const location = useLocation(); // Não precisamos mais disso
   const [mensagem, setMensagem] = useState<IMessage>({ texto: "", tipo: "erro" });
   const { register, handleSubmit, formState: { errors }, reset } = useForm<UserFormData>();
 
-  // [LÓGICA DO CADASTRO CORRIGIDA]
   const onSubmit: SubmitHandler<UserFormData> = (data) => {
     const { nome, email, senha } = data;
 
-    // 1. Verifica se o e-mail já existe no arquivo usuarios.ts
     const usuarioNoArquivo = usuarios.find((u) => u.email === email);
 
-    // 2. Verifica se o e-mail já existe no localStorage
     const usuarioNoStorage = localStorage.getItem(email);
 
     if (usuarioNoArquivo || usuarioNoStorage) {
@@ -171,18 +157,15 @@ function CadastroForm({ onToggleView }: { onToggleView: () => void }) {
       });
     }
 
-    // 3. Sucesso! Salva o novo usuário no localStorage
     localStorage.setItem(email, senha);
-    localStorage.setItem(nome_${email}, nome);
+    localStorage.setItem(`nome_${email}`, nome);
     
-    // Também salva o "token de sessão" e o nome para logar automaticamente
     localStorage.setItem("email", email);
     localStorage.setItem("nome", nome);
 
-    setMensagem({ texto: Conta para ${nome} criada com sucesso! Redirecionando..., tipo: "sucesso" });
+    setMensagem({ texto: `Conta para ${nome} criada com sucesso! Redirecionando...`, tipo: "sucesso" });
     reset();
 
-    // Redireciona para a página de teleconsulta
     setTimeout(() => {
       navigate("/teleconsulta", { replace: true });
       window.location.reload();
@@ -194,9 +177,8 @@ function CadastroForm({ onToggleView }: { onToggleView: () => void }) {
       <h1 className="text-3xl font-bold text-gray-900 mb-2">Criar Conta</h1>
       <p className="text-gray-600 mb-8">Preencha os campos para se cadastrar.</p>
 
-      {/* ... (o resto do seu formulário de cadastro JSX é o mesmo) ... */}
       {mensagem.texto && (
-        <p className={mb-4 text-center font-semibold ${mensagem.tipo === "sucesso" ? "text-green-600" : "text-red-600"}}>
+        <p className={`mb-4 text-center font-semibold ${mensagem.tipo === "sucesso" ? "text-green-600" : "text-red-600"}`}>
           {mensagem.texto}
         </p>
       )}
@@ -239,7 +221,6 @@ function CadastroForm({ onToggleView }: { onToggleView: () => void }) {
   );
 }
 
-// O componente Acesso() principal continua o mesmo
 export default function Acesso() {
   const [isLoginView, setIsLoginView] = useState(true);
   const { isAuthenticated, user, paciente, logout } = useAuth();
