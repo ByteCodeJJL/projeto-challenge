@@ -67,7 +67,7 @@ export default function Integrantes() {
 
             <img
               src={integrante.foto}
-              alt={Foto de ${integrante.nome}}
+              alt={`Foto de ${integrante.nome}`}
               className="w-full h-auto rounded-[var(--raio-borda-card)] shadow-[var(--sombra-card)] border-2 border-[var(--cor-destaque)]"
               loading="lazy"
             />
