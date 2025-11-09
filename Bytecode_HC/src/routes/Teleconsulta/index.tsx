@@ -60,14 +60,14 @@ export default function Teleconsulta() {
         setLoading(true);
         setError(null);
         
-        const response = await fetch(https://apiteleconsulta.onrender.com/consultas/por-paciente/${pacienteLogado.id});
+        const response = await fetch(`https://apiteleconsulta.onrender.com/consultas/por-paciente/${pacienteLogado.id}`);
         
         if (!response.ok) {
           if (response.status === 404) {
             setConsultas([]);
             return;
           }
-          throw new Error(Erro ${response.status}: ${response.statusText});
+          throw new Error(`Erro ${response.status}: ${response.statusText}`);
         }
 
         const data = await response.json();
@@ -79,7 +79,7 @@ export default function Teleconsulta() {
         }
       } catch (err) {
         const errorMessage = err instanceof Error ? err.message : 'Erro desconhecido';
-        setError(Erro ao carregar consultas: ${errorMessage}. Tente novamente mais tarde.);
+        setError(`Erro ao carregar consultas: ${errorMessage}. Tente novamente mais tarde.`);
         console.error('Erro ao buscar consultas:', err);
         setConsultas([]);
       } finally {
