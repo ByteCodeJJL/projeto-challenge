@@ -3,7 +3,7 @@ import Menu from "../Menu/Menu";
 import logo from '../../../public/logoHCprofile.jpg'; 
 import userIcon from '../../assets/img/geral/user-icon.webp';
 
-export function Header() {
+export default function Header() {
   return (
     <header 
       className="
@@ -33,5 +33,3 @@ export function Header() {
     </header>
   );
 }
-
-export default Header;
