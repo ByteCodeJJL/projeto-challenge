@@ -13,29 +13,41 @@ const navLinks = [
 
 export default function Menu() {
   const baseLinkClasses = `
-    inline-block py-2 px-4 text-sm font-bold text-white no-underline
-    bg-[var(--cor-primaria)] rounded-[var(--raio-borda-nav)]
+    inline-block py-2 px-4 md:py-2 md:px-5
+    text-sm md:text-base font-semibold text-white
+    no-underline rounded-[var(--raio-borda-nav)]
+    bg-[var(--cor-primaria)]
     transition-all duration-300 ease-in-out
-    hover:scale-110 hover:-translate-y-1
-    md:py-2 md:px-5 md:text-base
+    hover:scale-110 hover:-translate-y-1 hover:shadow-md
+    focus:outline-none focus:ring-2 focus:ring-[var(--cor-primaria-escura)]
   `;
 
   const activeLinkClasses = `
-    !bg-white !text-[var(--cor-texto-principal)] 
+    !bg-white !text-[var(--cor-texto-principal)]
     border-2 border-[var(--cor-primaria-escura)]
-    scale-110 -translate-y-1
+    scale-110 -translate-y-1 shadow-md
   `;
 
   return (
-    <nav>
-      <ul className="flex items-center gap-2 md:gap-4">
+    <nav
+      aria-label="Menu principal"
+      className="flex justify-center items-center"
+    >
+      <ul
+        className="
+          flex flex-wrap items-center justify-center
+          gap-2 md:gap-4
+          text-center
+        "
+      >
         {navLinks.map((link) => (
           <li key={link.path}>
             <NavLink
               to={link.path}
-              className={({ isActive }) => 
-                `${baseLinkClasses} ${isActive ? activeLinkClasses : ''}`
+              className={({ isActive }) =>
+                `${baseLinkClasses} ${isActive ? activeLinkClasses : ""}`
               }
+              end
             >
               {link.label}
             </NavLink>
