@@ -11,19 +11,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const email = localStorage.getItem('email');
     if (email) {
-      // Procura primeiro nos usuários pré-cadastrados
       const usuarioNoArquivo = usuarios.find(u => u.email === email);
       if (usuarioNoArquivo) {
         setUser({ email, nome: usuarioNoArquivo.nome });
       } else {
-        // Se não encontrar, significa que é um usuário cadastrado pelo formulário
-        const nome = localStorage.getItem(nome_${email});
+        const nome = localStorage.getItem(`nome_${email}`);
         if (nome) {
           setUser({ email, nome });
         }
       }
 
-      // Procura o paciente correspondente
       const pacienteEncontrado = pacientes.find(p => p.email === email);
       if (pacienteEncontrado) {
         setPaciente(pacienteEncontrado);
