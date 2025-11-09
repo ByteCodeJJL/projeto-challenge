@@ -11,7 +11,6 @@ interface AuthContextType {
   logout: () => void;
 }
 
-// Contexto de autenticação com valores padrão
 export const AuthContext = createContext<AuthContextType>({
   isAuthenticated: false,
   user: null,
