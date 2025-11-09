@@ -179,8 +179,9 @@ export default function Teleconsulta() {
             ) : consultas.length > 0 ? (
               <div className="space-y-4">
                 {consultas.map((consulta) => {
-                  const medico = medicos.find((m) => m.id === consulta.id_medico);
-                  const dataHora = new Date(consulta.data_hora);
+                  const medico = medicos.find((m) => m.id === consulta.medicoId);
+                  // monta um objeto Date a partir dos campos `data` e `horario`
+                  const dataHora = new Date(`${consulta.data}T${consulta.horario || '00:00:00'}`);
                   const data = dataHora.toLocaleDateString();
                   const horario = dataHora.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
                   

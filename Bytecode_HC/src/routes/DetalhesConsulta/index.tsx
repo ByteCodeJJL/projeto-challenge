@@ -23,10 +23,10 @@ export default function DetalhesConsulta() {
     if (consultaEncontrada) {
       setConsulta(consultaEncontrada);
 
-      const medicoEncontrado = medicos.find((m) => m.id === consultaEncontrada.id_medico);
+      const medicoEncontrado = medicos.find((m) => m.id === consultaEncontrada.medicoId);
       setMedico(medicoEncontrado);
 
-      const pacienteEncontrado = pacientes.find((p) => p.id === consultaEncontrada.id_paciente);
+      const pacienteEncontrado = pacientes.find((p) => p.id === consultaEncontrada.pacienteId);
       setPaciente(pacienteEncontrado);
     }
   }, [id]);
@@ -44,14 +44,15 @@ export default function DetalhesConsulta() {
     );
   }
 
-  const [datePart, timePart] = consulta.data_hora.split(" ");
-  const dataFormatada = new Date(`${datePart}T${timePart || "00:00:00"}`).toLocaleDateString("pt-BR", {
+  const datePart = consulta.data;
+  const timePart = consulta.horario || "00:00:00";
+  const dataFormatada = new Date(`${datePart}T${timePart}`).toLocaleDateString("pt-BR", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
   });
 
-  const horario = (timePart || "").slice(0, 5);
+  const horario = timePart.slice(0, 5);
 
   return (
     <main className="bg-gradient-to-r from-[var(--cor-primaria-clara)] to-[var(--cor-primaria)] py-14 min-h-screen px-4 text-white">
