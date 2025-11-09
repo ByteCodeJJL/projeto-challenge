@@ -12,5 +12,6 @@ export interface Paciente {
   idade: number;
   email: string;
   telefone: string;
+  endereco: Endereco;
   ativo: boolean;
 }
