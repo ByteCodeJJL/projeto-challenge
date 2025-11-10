@@ -155,7 +155,7 @@ export default function Teleconsulta() {
           {pacienteLogado 
             ? `Olá, ${pacienteLogado.nome}! Aqui você pode acompanhar suas consultas,
                verificar o checklist pré-consulta e ver informações pós-consulta.`
-            : "Entenda como funciona o processo de teleconsulta no Hospital das Clínicas —do agendamento ao acompanhamento pós-atendimento."}
+            : "Entenda como funciona o processo de teleconsulta no Hospital das Clínicas — do agendamento ao acompanhamento pós-atendimento."}
         </p>
       </header>
 
